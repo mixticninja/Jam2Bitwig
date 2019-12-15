@@ -253,7 +253,7 @@ function DeviceSliderControl(cursorDevice) {
         for(var i=0;i<8;i++) {
             macrovalues.push(0);
             parameterSelection.push(new ParameterPageValue(i));
-            //registerMacro(i,cursorDevice.getMacro(i));
+            registerMacro(i,cursorDevice.getMacro(i));
         }
     })();
 }

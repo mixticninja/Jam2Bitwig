@@ -16,8 +16,8 @@
 	This is quick and dirty hack of the original script code to adapt with my workflow using JAM and BITWIG.
 	I finally decided to share the little improvements i made because the official bitwig script wasn't updated since 2016 launch and 
 	those integration mods are why i'm happy using NI Jam with bitwig now !
-	There is a lot of deprecated calls in this API V1 script but it's ported to V2 just buy not calling one deprecated getMacro
-	So the update to get the JAM Macro button working and switching macros pages should not be too difficult...
+	There is a lot of deprecated calls in this API V1 script but it works with  API V2 just buy not calling deprecated getMacro
+	So the update to get the JAM Macro button working and switching macros pages in API v2 should not be too difficult...
 	(no time for me now to do that, still hope an official updated release from Bitwig or NI)
 	You can try this, at your own risks of course, here are my changes so far:
 	
@@ -49,7 +49,7 @@
 
 
 
-loadAPI(2);
+loadAPI(1);
 host.defineController("JAM2BITWIG", "NI Maschine JAM2BITWIG", "0.8", "cdbbe630-9edb-11e8-b568-0800200c9a66");
 host.defineMidiPorts(1, 1);
 host.addDeviceNameBasedDiscoveryPair(["Maschine Jam - 1"], ["Maschine Jam - 1"]);
